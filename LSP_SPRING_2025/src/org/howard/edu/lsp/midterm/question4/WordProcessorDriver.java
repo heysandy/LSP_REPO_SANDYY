@@ -3,7 +3,7 @@ package org.howard.edu.lsp.midterm.question4;
 import java.util.List;
 
 /**
- * Driver class to test the functionality of WordProcessor.
+ * Driver class to test WordProcessor functionality.
  */
 public class WordProcessorDriver {
     public static void main(String[] args) {
@@ -11,20 +11,30 @@ public class WordProcessorDriver {
         WordProcessor wp1 = new WordProcessor("This is a test with amazing results amazing achievements");
         List<String> longestWords1 = wp1.findLongestWords();
         System.out.println("Test 1 - Longest words: " + longestWords1);
+        // Expected Output: ["achievements"]
 
-        // Test case 2: Sentence with multiple occurrences of the same longest word and length
-        WordProcessor wp2 = new WordProcessor("Java is a powerful powerful tool");
+        // Test case 2: Sentence with multiple occurrences of the same longest word
+        WordProcessor wp2 = new WordProcessor("Java is a powerful tool powerful");
         List<String> longestWords2 = wp2.findLongestWords();
         System.out.println("Test 2 - Longest words: " + longestWords2);
+        // Expected Output: ["powerful"]
 
         // Test case 3: Sentence with single character words
         WordProcessor wp3 = new WordProcessor("A B C D E");
         List<String> longestWords3 = wp3.findLongestWords();
         System.out.println("Test 3 - Longest words: " + longestWords3);
+        // Expected Output: ["A", "B", "C", "D", "E"]
 
         // Test case 4: Empty string input
         WordProcessor wp4 = new WordProcessor("");
         List<String> longestWords4 = wp4.findLongestWords();
         System.out.println("Test 4 - Longest words: " + longestWords4);
+        // Expected Output: []
+
+        // Additional Test case 5: Sentence with varying whitespace
+        WordProcessor wp5 = new WordProcessor("Howard    University   is   great");
+        List<String> longestWords5 = wp5.findLongestWords();
+        System.out.println("Test 5 - Longest words: " + longestWords5);
+        // Expected Output: ["University"]
     }
 }
