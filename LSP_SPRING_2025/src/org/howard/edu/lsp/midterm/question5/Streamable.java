@@ -1,8 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Interface to represent streamable media content.
- * Ensures common behaviors across media types.
+ * Interface representing streamable media content.
  */
 public interface Streamable {
     void play();

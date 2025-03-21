@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Movie class implementing Streamable behavior and unique method.
+ * Represents movie content implementing Streamable behaviors.
  */
 public class Movie implements Streamable {
     private String title;
@@ -25,8 +25,7 @@ public class Movie implements Streamable {
         System.out.println("Stopped movie: " + title);
     }
 
-    // Unique Movie method
-    public void rewind(int minutes) {
-        System.out.println("Rewinding movie: " + title + " by " + minutes + " minutes");
+    public void rewind(int seconds) {
+        System.out.println("Rewinding movie: " + title + " by " + seconds + " seconds");
     }
 }

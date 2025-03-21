@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Audiobook class implementing Streamable behavior and unique method.
+ * Represents audiobook content implementing Streamable behaviors.
  */
 public class Audiobook implements Streamable {
     private String title;
@@ -25,7 +25,6 @@ public class Audiobook implements Streamable {
         System.out.println("Stopped audiobook: " + title);
     }
 
-    // Unique Audiobook method
     public void setPlaybackSpeed(double speed) {
         System.out.println("Setting playback speed of audiobook: " + title + " " + speed + "x");
     }

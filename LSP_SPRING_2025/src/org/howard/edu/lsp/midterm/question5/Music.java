@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Music class implementing Streamable behavior and unique method.
+ * Represents music content implementing Streamable behaviors.
  */
 public class Music implements Streamable {
     private String title;
@@ -25,7 +25,6 @@ public class Music implements Streamable {
         System.out.println("Stopped music: " + title);
     }
 
-    // Unique Music method
     public void addToPlaylist(String playlistName) {
         System.out.println("Added " + title + " to " + playlistName + " playlist");
     }

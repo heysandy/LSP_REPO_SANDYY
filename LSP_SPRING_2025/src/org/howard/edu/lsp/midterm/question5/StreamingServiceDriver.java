@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Driver class demonstrating the media streaming service implementation.
+ * Driver class demonstrating the streaming service functionality.
  */
 public class StreamingServiceDriver {
     public static void main(String[] args) {
@@ -13,32 +13,32 @@ public class StreamingServiceDriver {
         // Test the common behaviors for all media types (play, pause, stop)
         System.out.println("Testing common behaviors for all media types:\n");
 
-        // Test Music
+        // Music
         System.out.println("Testing Music:");
-        music.play();  
-        music.pause();  
-        music.stop();   
+        music.play();
+        music.pause();
+        music.stop();
         System.out.println();
 
-        // Test Movie
+        // Movie
         System.out.println("Testing Movie:");
-        movie.play();  
-        movie.pause();  
-        movie.stop();   
+        movie.play();
+        movie.pause();
+        movie.stop();
         System.out.println();
 
-        // Test Audiobook
+        // Audiobook
         System.out.println("Testing Audiobook:");
-        audiobook.play();  
-        audiobook.pause();  
-        audiobook.stop();   
+        audiobook.play();
+        audiobook.pause();
+        audiobook.stop();
         System.out.println();
 
         // Test unique behaviors for each media type
 
-        // Movie-specific behavior (rewind)
+        // Movie-specific behavior (rewind in seconds)
         Movie movieWithRewind = (Movie) movie;
-        movieWithRewind.rewind(30);
+        movieWithRewind.rewind(30); 
         System.out.println();
 
         // Audiobook-specific behavior (setPlaybackSpeed)
