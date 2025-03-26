@@ -1,5 +1,0 @@
-package org.howard.edu.lsp.midterm.question5;
-
-public class audioboo {
-	System.out.println("HI");
-}
