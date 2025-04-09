@@ -1,4 +1,4 @@
-package org.howard.edu.assignment6;
+package org.howard.edu.lsp.assignment6;
 
 /**
  * Custom exception for operations on empty IntegerSet.

@@ -3,7 +3,6 @@ package org.howard.edu.lsp.assignment6;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.howard.edu.lsp.assignment6.IntegerSetException; 
 
 /**
  * IntegerSet represents a set of unique integers and supports typical set operations
