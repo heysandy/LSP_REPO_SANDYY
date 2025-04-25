@@ -1,4 +1,5 @@
-// src/main/java/org/howard/edu/lspfinal/question2/Task.java
+// https://www.onlinegdb.com
+
 package org.howard.edu.lspfinal.question2;
 
 /**
